@@ -91,4 +91,4 @@ return 2>/dev/null
 # stop on errors
 set -o errexit
 
-main $*
+main "$@"
