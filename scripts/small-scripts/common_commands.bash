@@ -14,3 +14,9 @@ rm -rf
 
 # find insensitive
 find . -iname "ali*"
+
+# archive and zip with gzip
+tar -cfz test.tar.gz .
+
+# unarchive and unzip with gunzip
+tar -xf test.tar.gz
