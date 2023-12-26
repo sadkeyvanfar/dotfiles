@@ -44,3 +44,6 @@ nohup script.sh > nohup.out 2>&1 &
 
 # kill all process belongs to an app
 killall -9 java
+
+# add exe access to the user
+chmod u+x script.sh
