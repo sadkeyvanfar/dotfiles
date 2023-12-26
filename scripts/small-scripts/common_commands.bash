@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Lists all running processes.
+# Lists all running processes with thier user.
 ps aux
 
 # show your linux info
@@ -40,4 +40,7 @@ echo "00101010" > /dev/modem
 ls -R / 1> /dev/null
 
 # run script on background and send both normal output and errors to the same file
-nohup script.sh > output 2>&1 &
+nohup script.sh > nohup.out 2>&1 &
+
+# kill all process belongs to an app
+killall -9 java
