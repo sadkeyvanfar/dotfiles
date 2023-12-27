@@ -53,3 +53,6 @@ usrmod -aG wheel saeid
 
 # what ports are listening
 netstat -na | grep 80
+
+# find all files with suid access, mean can be run by root access
+find / -perm -u+s
