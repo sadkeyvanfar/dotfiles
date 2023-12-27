@@ -47,3 +47,6 @@ killall -9 java
 
 # add exe access to the user
 chmod u+x script.sh
+
+# add the user to new group
+usrmod -aG wheel saeid
