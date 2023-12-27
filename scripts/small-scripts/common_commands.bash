@@ -50,3 +50,6 @@ chmod u+x script.sh
 
 # add the user to new group
 usrmod -aG wheel saeid
+
+# what ports are listening
+netstat -na | grep 80
