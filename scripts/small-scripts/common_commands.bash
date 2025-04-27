@@ -59,3 +59,6 @@ netstat -tulpn
 
 # find all files with suid access, mean can be run by root access
 find / -perm -u+s
+
+# create new files named .gitkeep in all nested directories
+find . -type d -exec touch {}/.gitkeep \;
