@@ -45,6 +45,9 @@ Plugin 'majutsushi/tagbar'
 " finding files quickly 
 Plugin 'ctrlpvim/ctrlp.vim'
 
+ " insert matching delimiters like curly braces, parentheses, and quotes when you type them. 
+ Plugin 'Raimondi/delimitMate'
+
 call vundle#end()
  
 filetype plugin indent on
@@ -129,3 +132,13 @@ let g:easytags_suppress_ctags_warning = 1
 nmap <silent> <leader>b :TagbarToggle<CR>
 " Uncomment to open tagbar automatically whenever possible
 "autocmd BufEnter * nested :call tagbar#autoopen(0)
+
+" ----- delimitMate settings -----
+let delimitMate_expand_cr = 1
+augroup mydelimitMate
+  au!
+  au FileType markdown let b:delimitMate_nesting_quotes = ["`"]
+  au FileType tex let b:delimitMate_quotes = ""
+  au FileType tex let b:delimitMate_matchpairs = "(:),[:],{:},`:'"
+  au FileType python let b:delimitMate_nesting_quotes = ['"', "'"]
+augroup END
