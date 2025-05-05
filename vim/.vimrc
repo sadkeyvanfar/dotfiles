@@ -32,6 +32,9 @@ Plugin 'scrooloose/nerdtree'
 " NERDTree Tabs is responsible for opening up the same project tree browser on every tab.
 Plugin 'jistr/vim-nerdtree-tabs'
 
+" ---- Plugin Syntastic ----
+Plugin 'vim-syntastic/syntastic'
+
 call vundle#end()
  
 filetype plugin indent on
@@ -48,6 +51,10 @@ syntax on
 
 " ----- enable mouse ------
 set mouse=a
+
+" We need this for plugins like Syntastic and vim-gitgutter which put symbols
+" in the sign column.
+hi clear SignColumn
 
 " ----- Plugin-Specific Settings --------------------------------------
  
@@ -87,3 +94,11 @@ let g:airline_theme='solarized'
 nmap <silent> <leader>t :NERDTreeTabsToggle<CR>
 " To have NERDTree always open on startup
 let g:nerdtree_tabs_open_on_console_startup = 1
+
+" ----- scrooloose/syntastic settings -----
+let g:syntastic_error_symbol = '✘'
+let g:syntastic_warning_symbol = "▲"
+augroup mySyntastic
+  au!
+  au FileType tex let b:syntastic_mode = "passive"
+augroup END
