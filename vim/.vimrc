@@ -45,8 +45,11 @@ Plugin 'majutsushi/tagbar'
 " finding files quickly 
 Plugin 'ctrlpvim/ctrlp.vim'
 
- " insert matching delimiters like curly braces, parentheses, and quotes when you type them. 
- Plugin 'Raimondi/delimitMate'
+" insert matching delimiters like curly braces, parentheses, and quotes when you type them. 
+Plugin 'Raimondi/delimitMate'
+
+" tmux integration
+Plugin 'christoomey/vim-tmux-navigator'
 
 call vundle#end()
  
