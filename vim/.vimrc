@@ -42,6 +42,9 @@ Plugin 'xolox/vim-easytags'
 " reads the output from ctags and displays the information in an accessible way inside Vim.
 Plugin 'majutsushi/tagbar'
 
+" finding files quickly 
+Plugin 'ctrlpvim/ctrlp.vim'
+
 call vundle#end()
  
 filetype plugin indent on
