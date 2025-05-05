@@ -35,6 +35,13 @@ Plugin 'jistr/vim-nerdtree-tabs'
 " ---- Plugin Syntastic ----
 Plugin 'vim-syntastic/syntastic'
 
+" a dependency of vim-easytags
+Plugin 'xolox/vim-misc'
+" compiled index of all the functions, variables, and identifies
+Plugin 'xolox/vim-easytags'
+" reads the output from ctags and displays the information in an accessible way inside Vim.
+Plugin 'majutsushi/tagbar'
+
 call vundle#end()
  
 filetype plugin indent on
@@ -102,3 +109,20 @@ augroup mySyntastic
   au!
   au FileType tex let b:syntastic_mode = "passive"
 augroup END
+
+
+" ----- xolox/vim-easytags settings -----
+" Where to look for tags files
+set tags=./tags;,~/.vimtags
+" Sensible defaults
+let g:easytags_events = ['BufReadPost', 'BufWritePost']
+let g:easytags_async = 1
+let g:easytags_dynamic_files = 2
+let g:easytags_resolve_links = 1
+let g:easytags_suppress_ctags_warning = 1
+ 
+" ----- majutsushi/tagbar settings -----
+" Open/close tagbar with \b
+nmap <silent> <leader>b :TagbarToggle<CR>
+" Uncomment to open tagbar automatically whenever possible
+"autocmd BufEnter * nested :call tagbar#autoopen(0)
