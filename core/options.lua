@@ -26,7 +26,7 @@ vim.o.splitright = true -- Split windows to the right
 vim.o.splitbelow = true -- Split windows below
 
 vim.o.hlsearch = true -- Highlight search results
-vim.o.showmode = true -- Show the current mode in the command line
+vim.o.showmode = false -- Show the current mode in the command line
 
 vim.opt.termguicolors = true -- Enable 24-bit RGB colors in the terminal
 

@@ -1,3 +1,6 @@
+-- [[ Plugin: bufferline ]]
+-- This plugin provides a buffer line at the top of the Neovim window.
+-- It allows you to easily switch between open buffers and provides a visual representation of the buffers.
 return {
   'akinsho/bufferline.nvim',
   dependencies = {
