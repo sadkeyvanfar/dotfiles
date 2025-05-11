@@ -1,3 +1,9 @@
+-- This is the main configuration file for Neovim.
+
+-- It sets up the runtime path, and configures Neovim settings.
+require 'core.options'
+require 'core.keymaps'
+
 -- [[ Install `lazy.nvim` plugin manager ]]
 local lazypath = vim.fn.stdpath 'data' .. '/lazy/lazy.nvim'
 if not (vim.uv or vim.loop).fs_stat(lazypath) then
