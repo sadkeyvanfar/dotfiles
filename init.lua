@@ -27,4 +27,5 @@ require('lazy').setup({
   require 'plugins.autocompletion',
   require 'plugins.none-ls',
   require 'plugins.gitsigns',
+  require 'plugins.alpha',
 })
