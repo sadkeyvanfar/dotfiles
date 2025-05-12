@@ -31,5 +31,6 @@ require('lazy').setup({
   require 'plugins.indent-blankline',
   require 'plugins.comment',
   require 'plugins.debugging',
+  require 'plugins.chatgpt',
   require 'plugins.misc',
 })

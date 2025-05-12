@@ -1,3 +1,5 @@
+-- [[ Plugin: nvim-dap ]]
+-- This plugin provides debugging capabilities for Neovim.
 return {
   'mfussenegger/nvim-dap',
   dependencies = {
