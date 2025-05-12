@@ -36,5 +36,6 @@ require('lazy').setup({
   require 'plugins.lazygit',
   require 'plugins.vim-tmux-navigator',
   require 'plugins.harpoon2',
+  require 'plugins.aerial',
   require 'plugins.misc',
 })
