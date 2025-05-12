@@ -1,4 +1,4 @@
-[[ Plugin: vim-tmux-navigator ]]
+-- [[ Plugin: vim-tmux-navigator ]]
 -- This plugin allows you to navigate between Vim and Tmux panes seamlessly.
 -- It provides key mappings to switch between Vim splits and Tmux panes using the same keys.
 -- This is particularly useful for users who frequently switch between Vim and Tmux.
