@@ -34,5 +34,6 @@ require('lazy').setup({
   -- require 'plugins.chatgpt',
   require 'plugins.copilot',
   require 'plugins.lazygit',
+  require 'plugins.vim-tmux-navigator',
   require 'plugins.misc',
 })
