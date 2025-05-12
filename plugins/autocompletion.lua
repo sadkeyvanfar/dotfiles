@@ -34,12 +34,19 @@ return {
     'hrsh7th/cmp-nvim-lsp',
     'hrsh7th/cmp-buffer',
     'hrsh7th/cmp-path',
+    {
+      'zbirenbaum/copilot-cmp',
+      config = function()
+        require('copilot_cmp').setup()
+      end,
+    },
   },
   config = function()
     -- See `:help cmp`
     local cmp = require 'cmp'
     local luasnip = require 'luasnip'
     luasnip.config.setup {}
+    local copilot = require 'copilot'
 
     local kind_icons = {
       Text = '󰉿',
@@ -67,6 +74,7 @@ return {
       Event = '',
       Operator = '󰆕',
       TypeParameter = '󰊄',
+      Copilot = "",
     }
     cmp.setup {
       snippet = {
@@ -93,11 +101,11 @@ return {
         -- Accept ([y]es) the completion.
         --  This will auto-import if your LSP supports it.
         --  This will expand snippets if the LSP sent a snippet.
-        ['<C-y>'] = cmp.mapping.confirm { select = true },
+        -- ['<C-y>'] = cmp.mapping.confirm { select = true },
 
         -- If you prefer more traditional completion keymaps,
         -- you can uncomment the following lines
-        --['<CR>'] = cmp.mapping.confirm { select = true },
+        ['<CR>'] = cmp.mapping.confirm { select = true },
         --['<Tab>'] = cmp.mapping.select_next_item(),
         --['<S-Tab>'] = cmp.mapping.select_prev_item(),
 
@@ -131,6 +139,8 @@ return {
         ['<Tab>'] = cmp.mapping(function(fallback)
           if cmp.visible() then
             cmp.select_next_item()
+          elseif require("copilot.suggestion").is_visible() then
+				    copilot.accept()
           elseif luasnip.expand_or_locally_jumpable() then
             luasnip.expand_or_jump()
           else
@@ -157,16 +167,19 @@ return {
         { name = 'luasnip' },
         { name = 'buffer' },
         { name = 'path' },
+        { name = "copilot" },
       },
       formatting = {
         fields = { 'kind', 'abbr', 'menu' },
         format = function(entry, vim_item)
           vim_item.kind = string.format('%s', kind_icons[vim_item.kind])
+          -- vim_item.kind = string.format('%s %s', kind_icons[vim_item.kind], vim_item.kind) -- This concatonates the icons with the name of the item kind
           vim_item.menu = ({
             nvim_lsp = '[LSP]',
             luasnip = '[Snippet]',
             buffer = '[Buffer]',
             path = '[Path]',
+            copilot = "[Copilot]",
           })[entry.source.name]
           return vim_item
         end,

@@ -1,4 +1,4 @@
--- [[ Plugin: ChatGPT.nvim ]]
+-- [[ P]]
 -- This plugin requires a working OpenAI API key.
 -- It is recommended to set the API key in your environment variables.
 -- You can do this by running the following command in your terminal:
