@@ -33,6 +33,7 @@ require('lazy').setup({
   require 'plugins.debugging',
   -- require 'plugins.chatgpt',
   require 'plugins.copilot',
+  require 'plugins.avante'
   require 'plugins.lazygit',
   require 'plugins.vim-tmux-navigator',
   require 'plugins.harpoon2',
