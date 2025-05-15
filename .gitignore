@@ -39,3 +39,15 @@ luac.out
 *.x86_64
 *.hex
 
+# Eclipse project files
+.classpath
+.project
+.settings/
+
+# Intellij project files
+*.iml
+*.ipr
+*.iws
+.idea/
+
+.DS_Store/
