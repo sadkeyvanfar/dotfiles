@@ -50,4 +50,4 @@ luac.out
 *.iws
 .idea/
 
-.DS_Store/
+.DS_Store
