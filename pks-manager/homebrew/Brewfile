@@ -1,0 +1,228 @@
+# Description: Homebrew packages for macOS
+tap "homebrew/bundle"
+tap "homebrew/cask"
+tap "homebrew/core"
+tap "azure/kubelogin"
+tap "hashicorp/tap"
+# Macro processing language
+brew "m4"
+# Automatic configure script builder
+brew "autoconf"
+# Tool for generating GNU Standards-compliant Makefiles
+brew "automake"
+# Cryptography and SSL/TLS Toolkit
+brew "openssl@3"
+# Library for command-line editing
+brew "readline"
+# Command-line interface for SQLite
+brew "sqlite"
+# Microsoft Azure CLI 2.0
+brew "azure-cli"
+# Formatting tools for C, C++, Obj-C, Java, JavaScript, TypeScript
+brew "clang-format"
+# Cross-platform make
+brew "cmake"
+# Lightweight unit testing framework for C
+brew "cunit"
+# Get a file from an HTTP, HTTPS or FTP server
+brew "curl"
+# Convert text between DOS, UNIX, and Mac formats
+brew "dos2unix"
+# Modern, maintained replacement for ls
+brew "eza"
+# Collection of GNU find, xargs, and locate
+brew "findutils"
+# Fast Lexical Analyzer, generates Scanners (tokenizers)
+brew "flex"
+# Command-line fuzzy finder written in Go
+brew "fzf"
+# GNU debugger
+brew "gdb"
+# Distributed revision control system
+brew "git"
+# GNU Pretty Good Privacy (PGP) package
+brew "gnupg"
+# GNU troff text-formatting system
+brew "groff"
+# Kubernetes package manager
+brew "helm"
+# View and edit files in hexadecimal or ASCII
+brew "hexedit"
+# Viewer/editor/analyzer for executables
+brew "ht"
+# Full featured CLI system information tool
+brew "inxi"
+# CLI wrapper for basic network utilities on macOS - ip command
+brew "iproute2mac"
+# Modular IRC client
+brew "irssi"
+# Kubernetes command-line interface
+brew "kubernetes-cli"
+# Lazier way to manage everything docker
+brew "lazydocker"
+# Simple terminal UI for git commands
+brew "lazygit"
+# Generic library support script
+brew "libtool"
+# Next-gen compiler infrastructure
+brew "llvm"
+# Text-based web browser
+brew "lynx"
+# Java-based project management
+brew "maven"
+# Run a Kubernetes cluster locally
+brew "minikube"
+# SMTP client that can be used as an SMTP plugin for Mutt
+brew "msmtp"
+# Fast, highly customisable system info script
+brew "neofetch"
+# Ambitious Vim-fork focused on extensibility and agility
+brew "neovim"
+# Manage multiple Node.js versions
+brew "nvm"
+# Highly capable, feature-rich programming language
+brew "perl"
+# Execute binaries from Python packages in isolated environments
+brew "pipx"
+# PDF rendering library (based on the xpdf-3.0 code base)
+brew "poppler"
+# Cloud native development platform
+brew "pulumi"
+# Python version management
+brew "pyenv"
+# Pyenv plugin to manage virtualenv
+brew "pyenv-virtualenv"
+# Generic machine emulator and virtualizer
+brew "qemu"
+# File browser
+brew "ranger"
+# Search tool like grep and The Silver Searcher
+brew "ripgrep"
+# Cross-shell prompt for astronauts
+brew "starship"
+# Tool to build, change, and version infrastructure
+brew "terraform"
+# Terminal multiplexer
+brew "tmux"
+# Plugin manager for tmux
+brew "tpm"
+# Collection of Linux utilities
+brew "util-linux"
+# Vi 'workalike' with many additional features
+brew "vim"
+# App for managing virtual machines
+brew "virt-manager"
+# Internet file retriever
+brew "wget"
+# Access X11 clipboards from the command-line
+brew "xclip"
+# General-purpose lossless data-compression library
+brew "zlib"
+# Shell extension to navigate your filesystem faster
+brew "zoxide"
+# Next-generation plugin manager for zsh
+brew "zplug"
+# Fish-like fast/unobtrusive autosuggestions for zsh
+brew "zsh-autosuggestions"
+# Fish shell like syntax highlighting for zsh
+brew "zsh-syntax-highlighting"
+# A Kubernetes credential (exec) plugin implementing azure authentication
+brew "azure/kubelogin/kubelogin"
+# View, print, and comment on PDF documents
+cask "adobe-acrobat-reader"
+# Application launcher and productivity software
+cask "alfred"
+# Memory training application
+cask "anki"
+# Application uninstaller
+cask "appcleaner"
+# Web browser focusing on privacy
+cask "brave-browser"
+# Plain-text editor for web pages, program source codes and more
+cask "coteditor"
+# Universal database tool and SQL client
+cask "dbeaver-community"
+# App to build and share containerised applications and microservices
+cask "docker"
+# Web browser
+cask "firefox"
+cask "font-hack-nerd-font"
+cask "font-jetbrains-mono-nerd-font"
+cask "font-symbols-only-nerd-font"
+# Download accelerator and organiser
+cask "free-download-manager"
+# Open-source platform for visualizing and manipulating large graphs
+cask "gephi"
+# Desktop client for GitHub repositories
+cask "github"
+# GUI for the Dynamips Cisco router emulator
+cask "gns3"
+# Grammarly for desktop
+cask "grammarly-desktop"
+# UI for Kubernetes
+cask "headlamp"
+# Terminal emulator as alternative to Apple's Terminal app
+cask "iterm2"
+# Keyboard customiser
+cask "karabiner-elements"
+# GPU-based terminal emulator
+cask "kitty"
+# Kubernetes IDE
+cask "lens"
+# Free cross-platform office suite, fresh version
+cask "libreoffice"
+# Interactive tool for analyzing MongoDB data
+cask "mongodb-compass"
+# Orchestrates virtual Ubuntu instances
+cask "multipass"
+# Knowledge base that works on top of a local folder of plain text Markdown files
+cask "obsidian"
+# Administration and development platform for PostgreSQL
+cask "pgadmin4"
+# Collaboration platform for API development
+cask "postman"
+# App that enables mouse-free UI interaction
+cask "shortcat"
+# Graphical client for Git version control
+cask "sourcetree"
+# Text editor for code, markup and prose
+cask "sublime-text"
+# Messaging app with a focus on speed and security
+cask "telegram"
+# Customizable email client
+cask "thunderbird"
+# Virtual machines UI using QEMU
+cask "utm"
+# Development environment
+cask "vagrant"
+# Virtualiser for x86 hardware
+cask "virtualbox"
+# Open-source code editor
+cask "visual-studio-code"
+# Multimedia player
+cask "vlc"
+# GPU-accelerated cross-platform terminal emulator and multiplexer
+cask "wezterm"
+# Network protocol analyzer
+cask "wireshark"
+vscode "danielpinto8zz6.c-cpp-project-generator"
+vscode "daohong-emilio.yash"
+vscode "esbenp.prettier-vscode"
+vscode "formulahendry.code-runner"
+vscode "franneck94.c-cpp-runner"
+vscode "github.copilot"
+vscode "github.copilot-chat"
+vscode "kunalg.library-documentation-cpp"
+vscode "llvm-vs-code-extensions.lldb-dap"
+vscode "maelvalais.autoconf"
+vscode "ms-azuretools.vscode-containers"
+vscode "ms-azuretools.vscode-docker"
+vscode "ms-vscode.cmake-tools"
+vscode "ms-vscode.cpptools"
+vscode "ms-vscode.cpptools-extension-pack"
+vscode "ms-vscode.cpptools-themes"
+vscode "ms-vscode.hexeditor"
+vscode "ms-vscode.makefile-tools"
+vscode "vadimcn.vscode-lldb"
+vscode "vscodevim.vim"
+vscode "xaver.clang-format"
