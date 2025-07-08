@@ -62,6 +62,7 @@ alias gm='git merge'
 alias gp='git push'
 alias gl='git pull'
 alias glgg='git log --graph --max-count=15 --decorate --pretty="oneline"' # Show last 15 commits in a graph format
+alias glggf='git log --graph --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%an%C(reset)%C(bold yellow)%d%C(reset) %C(dim white)- %s%C(reset)' --all' # show git log with more visibility
 alias gcl='git clone'
 alias gclfzf='git clone $(git remote -v | fzf --height 40% --reverse --inline-info | awk "{print \$2}")' # Clone a repo with fzf
 
